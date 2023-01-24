@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgba(197, 228, 231, 1); */
+    font-family: 'Space Mono', monospace;
+    /* height: 100vh; */
+}
+.header-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding-top: 70px;
+    padding-bottom: 41px;
+    background-color: rgba(197, 228, 231, 1);
+    position: relative;
+}
+.main-box{
+    width:100%;
+    background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    position: absolute;
+    top:145px;
+    left:0;
+}
+.white-box{
+    margin-inline: 32px;
+}
+.money-input{
+    width:311px;
+    height: 48px;
+    border: none;
+    background-color: rgba(243, 249, 250, 1);
+    border-radius: 5px;
+    color: rgba(158, 187, 189, 1); 
+    margin-top: 6px; 
+    margin-bottom: 32px;
+    text-align: right;
+    padding-right: 17px;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.img-dollar{
+   background-image: url(./images/icon-dollar.svg);
+   background-repeat: no-repeat;
+   background-position-x: 15px;
+   background-position-y: 15px;
+}
+.content{
+    color: rgba(94, 122, 125, 1);
+    display: block;
+}
+.buttons{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+.tip-button{
+    border-radius: 5px;
+    background-color: rgba(0, 71, 75, 1);
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1); 
+}
+.custom-input{
+    background-color: rgba(243, 249, 250, 1);
+    color: rgba(84, 120, 120, 1);
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 48px;
+    width: 147.81369018554688px;
+    border-radius: 5px;
+
+}
+.numberOfPeople{
+    height: 48px;
+    width: 311px;
+    border-radius: 5px;
+    background-color: rgba(243, 249, 250, 1);
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    text-align: right;
+    padding-right: 17px;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.img-person{
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 15px;
+}
+.blue-box{
+    background-color:rgba(0, 71, 75, 1);
+    margin-inline: 24px;
+    border-radius: 15px;
+    padding-inline: 24px;
+    padding-bottom: 24px;
+    padding-top: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.row-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:87px;
+    margin-bottom: 21px;
+}
+.row-flex-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:87px;
+    margin-bottom: 33px;
+}
+
+.style-h3{
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    width: 98px;
+}
+.small-text{
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    color: rgba(127, 157, 159, 1);
+    width: 64px;
+}
+.total-money{
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: center;
+    color:rgba(38, 194, 174, 1);
+    width:96px;
+} 
+.reset{
+    background-color: rgba(13, 104, 109, 1);
+    height: 48px;
+    width: 281px;
+    border-radius: 5px;
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(0, 71, 75, 1);
+    border: none;
+    /* grid-column: 1/3; */
+}
