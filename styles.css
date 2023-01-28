@@ -33,7 +33,7 @@ body{
 .white-box{
     margin-inline: 32px;
 }
-.money-input{
+.moneyInput{
     width:311px;
     height: 48px;
     border: none;
@@ -49,6 +49,13 @@ body{
     font-weight: 700;
     line-height: 36px;
 }
+/* .money-input::placeholder{
+    color: rgba(0, 71, 75, 1);
+    font-family: 'Space Mono';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+} */
 .img-dollar{
    background-image: url(./images/icon-dollar.svg);
    background-repeat: no-repeat;
@@ -107,7 +114,15 @@ body{
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
+    color:rgba(158, 187, 189, 1); 
 }
+/* .numberOfPeople::placeholder{
+    color:rgba(0, 71, 75, 1);
+    font-family: 'Space Mono';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+} */
 .img-person{
     background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
