@@ -12,7 +12,7 @@
   <div class="main-box">
     <div class="white-box">
       <label class="content">Bill</label>
-      <input class="moneyInput img-dollar" type="text" placeholder="0" id="billInput">
+      <input class="moneyInput img-dollar input-hover" type="text" placeholder="0">
       
       <label class="content">Select Tip %</label>
       <div class="buttons">
@@ -21,12 +21,13 @@
         <button class="tip-button" type="button" value="15">15%</button>
         <button class="tip-button" type="button" value="25">25%</button>
         <button class="tip-button" type="button" value="50">50%</button>
-        <input class="custom-input" type="text" placeholder="Custom">
+        <input class="customInput" type="text" placeholder="Custom">
     </div>
   
 
-    <label class="content">Number of People</label>
-    <input class="numberOfPeople img-person" type="text" placeholder="0" id="numberInput">
+    <label class="content1 ">Number of People</label>
+    <p class="error">Can’t be zero</p>
+    <input class="numberOfPeople img-person input-hover" type="text" placeholder="0">
   </div>
 
   
@@ -45,13 +46,12 @@
       <h3 class="style-h3">Total</h3>
       <p class="small-text">/ person</p>
     </div>
-    <h3 class="total-money" id="totalMoney">$0.00</h3>
+    <h3 class="total-money" id="totalAmount">$0.00</h3>
   </div>
 
-    <button onclick="makeNull()" type="reset" class="reset">RESET</button>
+    <button onclick="makeNull()"  type="reset" class="reset">RESET</button>
   </div>
-  <!-- <button onclick="calculate()">calculate</button> -->
-        
+ 
   </div>
   <script src="script.js"></script>
 </body>

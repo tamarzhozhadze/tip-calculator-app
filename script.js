@@ -1,46 +1,57 @@
+
 const buttons = document.querySelectorAll(".tip-button");
- 
-const bill=document.querySelector(".moneyInput");
+const bill = document.querySelector(".moneyInput");
+const people = document.querySelector(".numberOfPeople");
+const tip = document.querySelector("#tipAmount");
+const total = document.querySelector("#totalAmount");
+const reset = document.querySelector(".reset");
+const error = document.querySelector(".error");
+const custom = document.querySelector(".customInput");
 
-const people=document.querySelector(".numberOfPeople");
+custom.addEventListener("input", function(event){
 
-const tip=document.querySelector("#tipAmount");
-console.log(tip);
-const total=document.querySelector("#totalMoney");
-console.log(total);
+  if(bill.value > 0 && people.value > 0 && custom.value > 0){
+    console.log(event.target.value)
+    let tipAmount = (bill.value / people.value) * (event.target.value/100);
+    tip.innerHTML = tipAmount;
+    let totalAmount = (tipAmount*people.value);
+    total.innerHTML = totalAmount;
+  }
+})
 
-const reset=document.querySelector(".reset");
 
-function makeNull(){
-    bill.value="";
-    people.value="";
-    tip.innerHTML="$0.00";
-    total.innerHTML="$0.00";
+// make function for the reset button;
+function makeNull() {
+  bill.value = "";
+  people.value = "";
+  custom.value = "";
+  tip.innerHTML = "$0.00";
+  total.innerHTML = "$0.00";
+  error.value = "";
+  error.style.display = "none";
 }
 
-buttons.forEach((button)=>{
-    button.addEventListener('click', function () {
-        let x = button.value
-        console.log(x);
-    });
+
+//make function for each button by array and inline methods:
+buttons.forEach((oneButton) => {
+  oneButton.addEventListener("click", function () {
+    if(bill.value > 0 && people.value > 0){
+    let tipAmount = (bill.value / people.value) * (oneButton.value / 100);
+    tip.innerHTML = tipAmount;
+    let totalAmount = (tipAmount*people.value);
+    total.innerHTML = totalAmount;
+    }
+});
 });
 
-// function calculate(){
-//     let x=bill.value/people.value;
-//     console.log(x);
-//     tip.innerHTML=x;
 
-//     let y=x*people.value;
-//     console.log(y);
-//     total.innerHTML=y;
-    
-// }
-
-
-
-
-
-
-
+people.addEventListener("input", function(event){
+  // console.log(event.target.value)
+  if(event.target.value === "0"){
+   error.style.display = "inline";
+  }else{
+   error.style.display = "none";
+  }    
+})
 
 
