@@ -57,6 +57,12 @@ body{
    background-position-y: 15px;
 }
 .content{
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
     color: rgba(94, 122, 125, 1);
     display: block;
 }
@@ -70,6 +76,7 @@ body{
     column-gap: 16px;
 }
 .tip-button{
+    border: none;
     border-radius: 5px;
     background-color: rgba(0, 71, 75, 1);
     font-family: Space Mono;
@@ -85,6 +92,13 @@ body{
     color: rgba(0, 71, 75, 1);
     border: none;
 
+}
+::placeholder{
+    color:rgba(156, 181, 181, 0.851);
+}
+.customInput::placeholder{
+    color: rgba(84, 120, 120, 1);
+    
 }
 .customInput{
     background-color: rgba(243, 249, 250, 1);
@@ -118,8 +132,13 @@ body{
     color:rgba(158, 187, 189, 1); 
 }
 .content1{
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
     color: rgba(94, 122, 125, 1);
-    /* display: inline; */
     margin-right: 15px;
 }
 .error{
@@ -216,4 +235,110 @@ body{
 .input-hover:hover{
     border: 2px solid rgba(38, 194, 174, 1);
     cursor: pointer;
+}
+@media(min-width:768px){
+    body{
+        background-color: rgba(197, 228, 231, 1);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-background{
+        padding-top: 163px;
+        padding-bottom: 88px;
+        background-color: rgba(197, 228, 231, 1);
+        position: static;
+    }
+    .main-box{
+        width:903px;
+        background-color: #FFFFFF;
+        padding:32px 32px;
+        border-radius: 25px;
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .white-box{
+        margin-inline: 0;
+    }
+    .moneyInput{
+        width:379px;
+        border: none;
+        margin-bottom: 40px;
+    }
+    
+    .img-dollar{
+       background-image: url(./images/icon-dollar.svg);
+       background-repeat: no-repeat;
+       background-position-y: 13px;
+    }
+    
+    .buttons{
+        margin-top: 16px;
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 16px;
+        column-gap: 14px;
+    }
+  
+  
+    .customInput{
+        height: 48px;
+        width: 117px;
+    
+    }
+    .numberOfPeople{
+         width: 379px;
+        margin-bottom: 0;
+    }
+    .content1{
+        
+        margin-right: 80px;
+    }
+ 
+    .img-person{
+        
+        background-position-x: 15px;
+        background-position-y: 15px;
+    }
+    .blue-box{
+        margin-inline: 0;
+        padding-inline:40px;
+        padding-bottom: 40px;
+        padding-top: 56px;
+        width:413px;
+        margin-left: 48px;
+    }
+
+
+    .row-flex{
+        
+        gap:92px;
+        margin-bottom: 25px;
+    }
+    .row-flex-2{
+        
+        gap:92px;
+        margin-bottom: 122px;
+    }
+  
+    .total-money{
+        font-family: Space Mono;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 71px;
+        letter-spacing: -1px;
+        text-align: right;        
+        width:143px;
+    } 
+    .reset{
+        width: 333px;
+        border-radius: 5px;
+        
+    }
+   
+
 }
