@@ -236,7 +236,7 @@ body{
     border: 2px solid rgba(38, 194, 174, 1);
     cursor: pointer;
 }
-@media(min-width:768px){
+@media(min-width:1440px){
     body{
         background-color: rgba(197, 228, 231, 1);
         display: flex;
@@ -244,7 +244,7 @@ body{
         flex-direction: column;
     }
     .header-background{
-        padding-top: 163px;
+        padding-top: 80px;
         padding-bottom: 88px;
         background-color: rgba(197, 228, 231, 1);
         position: static;
