@@ -32,11 +32,13 @@ body{
 }
 .white-box{
     margin-inline: 32px;
+
 }
 .moneyInput{
     width:311px;
     height: 48px;
-    border: none;
+    outline: none;
+    border:none;
     background-color: rgba(243, 249, 250, 1);
     border-radius: 5px;
     color: rgba(158, 187, 189, 1); 
@@ -49,6 +51,7 @@ body{
     font-weight: 700;
     line-height: 36px;
 }
+
 
 .img-dollar{
    background-image: url(./images/icon-dollar.svg);
@@ -107,6 +110,7 @@ body{
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
+    outline:none;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -115,11 +119,13 @@ body{
     border-radius: 5px;
 
 }
+
 .numberOfPeople{
     height: 48px;
     width: 311px;
     border-radius: 5px;
     background-color: rgba(243, 249, 250, 1);
+    outline: none;
     border: none;
     margin-top: 6px;
     margin-bottom: 32px;
@@ -140,6 +146,8 @@ body{
     text-align: left;
     color: rgba(94, 122, 125, 1);
     margin-right: 15px;
+    border-color: rgba(225, 116, 87, 1);
+    
 }
 .error{
     font-family: Space Mono;
